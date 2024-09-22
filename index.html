@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>ELDOURADO</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/inicial.jpeg" alt="">
+             </div> 
+            <p>Você é um caçador de tesouros e nessa nova etapa da sua vida, decide se aventurar pelo tesouro do  eldorado; a cidade de ouro perdida. Na sua busca, você se encontra em uma vilarejo,  e escolhe com seguir daí.</p>
+            <button class="btn-proximo" data-proximo="1">Falar com os aldeões.</button>
+            <button class="btn-proximo" data-proximo="2">Explorar por conta própria</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/aldeoes.jpeg" alt="">
+             </div> 
+            <p>Você decidiu procurar ajuda e os aldeões dão informações detalhadas sobre dois locais principais onde pistas do tesouro podem estar:</p>
+            <button class="btn-proximo" data-proximo="3">Floresta assombrada</button>
+            <button class="btn-proximo" data-proximo="4">Caverna do guardiaõ</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/sem ajuda.jpeg" alt="">
+             </div> 
+            <p>Você decide explorar sem ajuda, mas as informações que encontra são vagas demais, com maiores chances de cair em uma armadilha</p>
+            <button class="btn-proximo" data-proximo="5">continuar explorando mais a fundo</button>
+            <button class="btn-proximo" data-proximo="6">Desistir do tesouro</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/floresta assombrada.jpeg" alt="">
+             </div> 
+            <p>Você encontra um druida que conhece segredos do tesouro, mas ele pede ajuda com algumas coisas que precisa carregar e desvia do caminho que precisa seguir </p>
+            <button class="btn-proximo" data-proximo="7">ajudar o druida</button>
+            <button class="btn-proximo" data-proximo="8">Ignorar o druida e seguir em frente.</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/guardião.jpeg" alt="">
+             </div> 
+            <p>Você encontra um guardião que protege o caminho para o tesouro. Num dilema, você encontra duas alternativas.</p>
+            <button class="btn-proximo" data-proximo="9">Enfrentar o guardião</button>
+             <button class="btn-proximo" data-proximo="10">Tentar negociar</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/floresta assombrada.jpeg" alt="">
+             </div> 
+            <p>Explorando mais, você acaba encontrando a floresta assombrada</p>
+            <button class="btn-proximo" data-proximo="3">continuar na floresta</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/casa.jpeg" alt="">
+             </div> 
+            <p>Você se pega pensando que talvez encontrar tesouros não seja mais a sua unica ambisão e decide voltar para casa encontrar outras paixões para se ocupar.</p>
+            <button class="btn-proximo" data-proximo="0">Fim de jogo para você.</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/druidaa.jpeg" alt="">
+             </div> 
+            <p>Decidindo ajudar, o Druida revela um mapa da caverna oculta, com menor risco</p>
+            <button class="btn-proximo" data-proximo="11">Seguir com ajuda do mapa</button>
+            
+        </div>
+
+        <div class="passo" id="passo-8">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/armadilha1.jpeg" alt="">
+             </div> 
+            <p>Você acaba encontrando armadilhas e uma pista fragmentada, porém, com muita dificuldade, você chega lá</p>
+            <button class="btn-proximo" data-proximo="11">Ir para as ruínas antigas</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/derrota.jpeg" alt="">
+             </div> 
+            <p>Você entra em uma batalha perigosa e desafiadora, seus reflexos são bons, mas o druida é veloz e acaba te acertando em cheio, sem esperanças, você implora misericórdia e jura que voltaria para a casa.</p>
+            <button class="btn-proximo" data-proximo="6">Aceitar a derrota e o fracasso</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/enigma.jpeg" alt="">
+             </div> 
+            <p>O guardião impôe um enigma. Se resolver, abre o caminho; se falhar, é atacado.</p>
+            <button class="btn-proximo" data-proximo="12">Aceitar o desafio.</button>
+            <button class="btn-proximo" data-proximo="6">Desistir.</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/ruinasa.jpeg" alt="">
+             </div> 
+            <p>Você chega às ruínas antigas onde a cidade de ouro esta encondida, mas ainda camuflada, você tem que escolher entre ativá-la manualmente ou por meio de um mecanismo velho que achou nas ruínas </p>
+            <button class="btn-proximo" data-proximo="15">Manualmente</button>
+            <button class="btn-proximo" data-proximo="16">Usar o mecanismo</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/helio.jpeg" alt="">
+             </div> 
+            <p>O guardião então cantarola para você "O que um cientista disse quando encontrou dois átomos de hélio?"</p>
+            <button class="btn-proximo" data-proximo="13">He He!</button>
+            <button class="btn-proximo" data-proximo="14">K K!</button>
+        </div>
+
+        <div class="passo" id="passo-13">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/ruinasa.jpeg" alt="">
+             </div> 
+            <p>CERTA RESPOSTA!!! Promessa é divida, ele abre caminho para as ruínas.</p>
+            <button class="btn-proximo" data-proximo="11">Seguir caminho.</button>
+            
+        </div>
+
+        <div class="passo" id="passo-14">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/derrota.jpeg" alt="">
+             </div> 
+            <p>ERRADO!! O guardião te ataca e ainda diz o quão ruim em química você é</p>
+            <button class="btn-proximo" data-proximo="0">Fim de jogo para você.</button>
+            
+        </div>
+
+        <div class="passo" id="passo-15">
+             <div class="jogo-imagem"> 
+            <img src="imagemjogo/armadilha2.jpeg" alt="">
+         </div> 
+            <p>Você encontra armadilhas venenosas e perigosas, mas acaba encontrando a verdadeira cidade dourada, o tesouro que muitas nunca acreditaram que poderia ser real.</p>
+            <button class="btn-proximo" data-proximo="17">Se aventurar pela cidade.</button>
+           
+        </div>
+
+        <div class="passo" id="passo-16">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/camuflada.jpeg" alt="">
+             </div> 
+            <p>Com o mecanismo, você entra na cidade facilmente</p>
+            <button class="btn-proximo" data-proximo="17">Se aventurar pela cidade.</button>
+           
+        </div>
+
+        <div class="passo" id="passo-17">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/preservou.jpeg" alt="">
+             </div> 
+            <p>É a cidade de ouro, tantas riquezas, sabedoria, segredos e aventuras desconhecidas que o mundo nunca viu. Todas essas coisas trazem um questionamento para você: o que fazer?</p>
+            <button class="btn-proximo" data-proximo="18">Levar tudo o que ficou guardado durante séculos para o mundo</button>
+            <button class="btn-proximo" data-proximo="19">Deixar tudo para trás e retornar para casa.</button>
+           
+        </div>
+
+        <div class="passo" id="passo-18">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/levou ao mundo.jpeg" alt="">
+             </div> 
+            <p>Você expõe tudo ao mundo, ganha milhares de fãs e fica podre de rico, mas desencadeia uma série de eventos catastróficos, pessoas agora sabem onde fica a cidade e começam a saquiar todo o ouro, destruindo a cidade e perdendo todo o valor do tesouro.</p>
+
+           
+        </div>
+
+        <div class="passo" id="passo-19">
+            <div class="jogo-imagem"> 
+                <img src="imagemjogo/preservou.jpeg" alt="">
+             </div> 
+            <p>Você lutou para chegar até la, fez o que pode, realizou o seu sonho, de encontrar o tesouro mais valioso, mas entende que levar esse segredo para o mundo, só vai destruir a linda cidade dourada. Você, protegendo essa cidade do perigo humano, se sente um herói que sempre quis ser.</p>
+
+           
+        </div>
+
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
